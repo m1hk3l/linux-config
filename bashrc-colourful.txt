@@ -1,0 +1,12 @@
+
+ROOTisWHITE="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}"
+GREEN="\[\033[01;32m\]"
+CYAN="\[\033[01;36m\]"
+YELLOW="\[\033[01;93m\]"
+EC="\[\033[00m\]"
+
+PS1="${ROOTisWHITE}${GREEN}\u@${EC}${CYAN}\w${EC}${YELLOW}\$${EC} "
+#PS1="${GREEN}\u@${ENDCOLOR}${CYAN}\w${ENDCOLOR}${YELLOW}\$: ${ENDCOLOR}"
+
+LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
+
